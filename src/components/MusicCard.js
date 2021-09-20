@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-class MusicList extends Component {
+class MusicCard extends Component {
   render() {
     const { music: { trackName, previewUrl } } = this.props;
     /* Logica tirada com ajuda de várias pessoas */
@@ -18,7 +18,7 @@ class MusicList extends Component {
   }
 }
 
-MusicList.propTypes = {
+MusicCard.propTypes = {
   music: PropTypes.shape({
     trackName: PropTypes.string,
     previewUrl: PropTypes.string,
@@ -26,4 +26,4 @@ MusicList.propTypes = {
   }).isRequired,
 };
 
-export default MusicList;
+export default MusicCard;

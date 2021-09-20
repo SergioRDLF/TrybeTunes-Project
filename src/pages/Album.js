@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Header from '../components/Header';
 import getMusics from '../services/musicsAPI';
 import Loading from './Loading';
-import MusicList from '../components/MusicList';
+import MusicCard from '../components/MusicCard';
 
 class Album extends Component {
   constructor() {
@@ -37,8 +37,9 @@ class Album extends Component {
       <section>
         <h3 data-testid="album-name">{musicList[0].collectionName}</h3>
         <h4 data-testid="artist-name">{musicList[0].artistName}</h4>
+        {/* https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/slice */}
         {musicList.slice(1).map((music) => (
-          <MusicList key={ music.trackId } music={ music } />
+          <MusicCard key={ music.trackId } music={ music } />
         ))}
       </section>
     );

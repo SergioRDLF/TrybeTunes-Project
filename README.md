@@ -10,7 +10,7 @@ Essa aplicação será capz de:
   - Reproduzir uma prévia das músicas deste álbum;
   - Favoritar e desfavoritar músicas;
 
-# Ferramentas
+## Ferramentas
 Neste projeto foi necessário:
 
   * Fazer requisições e consumir dados vindos de uma `API`;
